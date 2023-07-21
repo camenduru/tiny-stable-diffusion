@@ -54,7 +54,7 @@ def load_img(path, h0, w0):
 
 
 config = "optimizedSD/v1-inference.yaml"
-ckpt = "models/ldm/stable-diffusion-v1/model.ckpt"
+ckpt = "/content/model.ckpt"
 
 parser = argparse.ArgumentParser()
 

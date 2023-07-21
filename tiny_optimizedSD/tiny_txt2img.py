@@ -34,7 +34,7 @@ def load_model_from_config(ckpt, verbose=False):
 
 
 config = "tiny_optimizedSD/v1-inference.yaml"
-DEFAULT_CKPT = "full_int2_sd.pth"
+DEFAULT_CKPT = "/content/model.ckpt"
 
 parser = argparse.ArgumentParser()
 ## a painting of a virus monster playing guitar

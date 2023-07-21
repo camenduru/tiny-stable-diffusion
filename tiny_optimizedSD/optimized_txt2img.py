@@ -1,6 +1,4 @@
 import argparse, os, re, sys
-sys.path.append('.')
-sys.path.append('/home/hyf/latent-diffusion/taming-transformers')
 import torch
 import numpy as np
 from random import randint
@@ -36,7 +34,7 @@ def load_model_from_config(ckpt, verbose=False):
 
 
 config = "optimizedSD/v1-inference.yaml"
-DEFAULT_CKPT = "/home/hyf/stablediffusion-v1/models/ldm/stable-diffusion-v1/model.ckpt"
+DEFAULT_CKPT = "/content/model.ckpt"
 
 parser = argparse.ArgumentParser()
 
