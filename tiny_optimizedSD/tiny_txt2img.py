@@ -1,7 +1,4 @@
 import argparse, os, re, sys
-os.environ['CUDA_VISIBLE_DEVICES'] = '2'
-sys.path.append('.')
-sys.path.append('/home/hyf/latent-diffusion/taming-transformers')
 import torch
 import numpy as np
 from random import randint

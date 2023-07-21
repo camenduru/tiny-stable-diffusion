@@ -42,7 +42,7 @@ def load_model_from_config(ckpt, verbose=False):
     return sd
 
 config = "optimizedSD/v1-inference.yaml"
-ckpt = "models/ldm/stable-diffusion-v1/model.ckpt"
+ckpt = "content/model.ckpt"
 sd = load_model_from_config(f"{ckpt}")
 li, lo = [], []
 for key, v_ in sd.items():
@@ -247,4 +247,4 @@ demo = gr.Interface(
     ],
     outputs=["image", "text"],
 )
-demo.launch()
+demo.launch(share=True)
